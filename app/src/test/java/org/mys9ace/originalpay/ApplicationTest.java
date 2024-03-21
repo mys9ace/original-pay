@@ -12,4 +12,11 @@ class ApplicationTest {
     Application.main(new String[0]);
     assertTrue(true);
   }
+
+  @Test
+  public void ビルダーを利用してアプリケーションを取得できること() {
+    Application.Builder builder = Application.builder();
+    Application application = builder.build();
+    assertTrue(true);
+  }
 }
